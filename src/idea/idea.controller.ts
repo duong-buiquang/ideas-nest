@@ -6,13 +6,11 @@ import {
   Param,
   Post,
   Put,
-  UsePipes,
 } from '@nestjs/common';
-import { ValidationPipe } from 'src/shared/validation.pipe';
 import { IdeaDTO } from './idea.dto';
 import { IdeaService } from './idea.service';
 
-@Controller('idea')
+@Controller('api/idea')
 export class IdeaController {
   constructor(private ideaService: IdeaService) {}
 
